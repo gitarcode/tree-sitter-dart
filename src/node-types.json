@@ -3123,6 +3123,30 @@
     }
   },
   {
+    "type": "external_declaration",
+    "named": true,
+    "fields": {
+      "signature": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "function_signature",
+            "named": true
+          },
+          {
+            "type": "getter_signature",
+            "named": true
+          },
+          {
+            "type": "setter_signature",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "factory_constructor_signature",
     "named": true,
     "fields": {},
@@ -7539,6 +7563,10 @@
         },
         {
           "type": "extension_declaration",
+          "named": true
+        },
+        {
+          "type": "external_declaration",
           "named": true
         },
         {

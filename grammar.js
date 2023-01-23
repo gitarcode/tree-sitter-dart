@@ -180,12 +180,22 @@ module.exports = grammar({
             repeat($.part_directive),
             repeat($.part_of_directive),
             // The precedence here is to make sure that this rule is matched before any of the _statement rules are matched for testing.
-            repeat(prec.dynamic(22, seq(optional($._metadata), $._top_level_definition))),
-            //for testing:
-            repeat($._statement),
+            repeat(prec.dynamic(22, choice(
+              seq(optional($._metadata), $._top_level_definition),
+              //for testing:
+              $._statement,
+            ))),
             optional($._expression),
         ),
-
+        external_declaration: $ => seq(
+          $._external_builtin,
+          field('signature', choice(
+            $.function_signature,
+            $.getter_signature,
+            $.setter_signature,
+          )),
+          $._semicolon,
+        ),
         // Page 187 topLevelDefinition
         _top_level_definition: $ => choice(
             $.class_definition,
@@ -193,22 +203,7 @@ module.exports = grammar({
             $.extension_declaration,
             $.mixin_declaration,
             $.type_alias,
-            seq(
-                optional($._external_builtin),
-                $.function_signature,
-                $._semicolon
-            ),
-            seq(
-                optional($._external_builtin),
-                $.getter_signature,
-                $._semicolon
-            ),
-            seq(
-                optional($._external_builtin),
-                $.setter_signature,
-                $._semicolon
-            ),
-
+            $.external_declaration,
             seq(
                 $.function_signature,
                 $.function_body
