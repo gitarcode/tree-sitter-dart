@@ -14,18 +14,19 @@ class A {
   (class_definition
     name: (identifier)
     body: (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          name: (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              name: (identifier)
-              value: (decimal_integer_literal))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            name: (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                name: (identifier)
+                value: (decimal_integer_literal)))))))))
 
 ================================================================================
 single type import declaration
@@ -168,29 +169,32 @@ class Point {
   (class_definition
     (identifier)
     (class_body
-      (declaration
-        (inferred_type)
-        (initialized_identifier_list
-          (initialized_identifier
-            (identifier))))
-      (declaration
-        (inferred_type)
-        (initialized_identifier_list
-          (initialized_identifier
+      (class_member_definition
+        (declaration
+          (inferred_type)
+          (initialized_identifier_list
+            (initialized_identifier
+              (identifier)))))
+      (class_member_definition
+        (declaration
+          (inferred_type)
+          (initialized_identifier_list
+            (initialized_identifier
+              (identifier)
+              (string_literal)))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
             (identifier)
-            (string_literal))))
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (expression_statement
-            (assignment_expression
-              (assignable_expression
-                (identifier))
-              (decimal_integer_literal))))))))
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (expression_statement
+              (assignment_expression
+                (assignable_expression
+                  (identifier))
+                (decimal_integer_literal)))))))))
 
 ================================================================================
 method declaration
@@ -209,26 +213,27 @@ class Beyonce {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier)))))
-      (function_body
-        (block
-          (comment))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block
+            (comment)))))))
 
 ================================================================================
 constructor declaration
@@ -253,69 +258,73 @@ class Point {
   (class_definition
     name: (identifier)
     body: (class_body
-      (declaration
-        (type_identifier)
-        (initialized_identifier_list
-          (initialized_identifier
-            (identifier))
-          (initialized_identifier
-            (identifier))))
-      (method_signature
-        (constructor_signature
-          name: (identifier)
-          parameters: (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              name: (identifier))
-            (formal_parameter
-              (type_identifier)
-              name: (identifier)))))
-      (function_body
-        (block
-          (expression_statement
-            (assignment_expression
-              left: (assignable_expression
+      (class_member_definition
+        (declaration
+          (type_identifier)
+          (initialized_identifier_list
+            (initialized_identifier
+              (identifier))
+            (initialized_identifier
+              (identifier)))))
+      (class_member_definition
+        (method_signature
+          (constructor_signature
+            name: (identifier)
+            parameters: (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                name: (identifier))
+              (formal_parameter
+                (type_identifier)
+                name: (identifier)))))
+        (function_body
+          (block
+            (expression_statement
+              (assignment_expression
+                left: (assignable_expression
+                  (this)
+                  (unconditional_assignable_selector
+                    (identifier)))
+                right: (identifier)))
+            (expression_statement
+              (assignment_expression
+                left: (assignable_expression
+                  (this)
+                  (unconditional_assignable_selector
+                    (identifier)))
+                right: (identifier))))))
+      (class_member_definition
+        (method_signature
+          (constructor_signature
+            name: (identifier)
+            name: (identifier)
+            parameters: (formal_parameter_list)))
+        (function_body
+          (block
+            (expression_statement
+              (member_access
                 (this)
-                (unconditional_assignable_selector
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (decimal_integer_literal))
+                      (argument
+                        (decimal_integer_literal))))))))))
+      (class_member_definition
+        (declaration
+          (constructor_signature
+            name: (identifier)
+            name: (identifier)
+            parameters: (formal_parameter_list
+              (formal_parameter
+                (constructor_param
+                  (this)
                   (identifier)))
-              right: (identifier)))
-          (expression_statement
-            (assignment_expression
-              left: (assignable_expression
-                (this)
-                (unconditional_assignable_selector
-                  (identifier)))
-              right: (identifier)))))
-      (method_signature
-        (constructor_signature
-          name: (identifier)
-          name: (identifier)
-          parameters: (formal_parameter_list)))
-      (function_body
-        (block
-          (expression_statement
-            (member_access
-              (this)
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (decimal_integer_literal))
-                    (argument
-                      (decimal_integer_literal)))))))))
-      (declaration
-        (constructor_signature
-          name: (identifier)
-          name: (identifier)
-          parameters: (formal_parameter_list
-            (formal_parameter
-              (constructor_param
-                (this)
-                (identifier)))
-            (formal_parameter
-              (constructor_param
-                (this)
-                (identifier)))))))))
+              (formal_parameter
+                (constructor_param
+                  (this)
+                  (identifier))))))))))
 
 ================================================================================
 object instantiation
@@ -333,17 +342,18 @@ class Point {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (expression_statement
-            (new_expression
-              (type_identifier)
-              (arguments))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (expression_statement
+              (new_expression
+                (type_identifier)
+                (arguments)))))))))
 
 ================================================================================
 variable declaration
@@ -361,17 +371,18 @@ class JayZ {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              (identifier))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                (identifier)))))))))
 
 ================================================================================
 enum declaration
@@ -785,19 +796,20 @@ class MyClass {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier)))))
-      (function_body
-        (block)))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block))))))
 
 ================================================================================
 Get and set methods (functional?)
@@ -819,19 +831,20 @@ class MyClass {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (setter_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier)))))
-      (function_body
-        (block)))))
+      (class_member_definition
+        (method_signature
+          (setter_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block))))))
 
 ================================================================================
 Get and set identifiers (ERROR)
@@ -852,26 +865,27 @@ class Tree {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (ERROR
-            (function_signature
-              (type_identifier)
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (ERROR
+              (function_signature
+                (type_identifier)
+                (identifier)
+                (ERROR
+                  (identifier))
+                (formal_parameter_list))
               (identifier)
-              (ERROR
-                (identifier))
-              (formal_parameter_list))
-            (identifier)
-            (identifier)
-            (identifier)
-            (identifier))
-          (return_statement
-            (identifier)))))))
+              (identifier)
+              (identifier)
+              (identifier))
+            (return_statement
+              (identifier))))))))
 
 ================================================================================
 void types
@@ -887,19 +901,20 @@ class MyClass {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier)))))
-      (function_body
-        (block)))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block))))))
 
 ================================================================================
 external factories
@@ -918,12 +933,14 @@ class LinkedHashMap {
   (class_definition
     (identifier)
     (class_body
-      (declaration
-        (factory_constructor_signature
-          (identifier)
-          (formal_parameter_list)))
-      (declaration
-        (factory_constructor_signature
-          (identifier)
-          (identifier)
-          (formal_parameter_list))))))
+      (class_member_definition
+        (declaration
+          (factory_constructor_signature
+            (identifier)
+            (formal_parameter_list))))
+      (class_member_definition
+        (declaration
+          (factory_constructor_signature
+            (identifier)
+            (identifier)
+            (formal_parameter_list)))))))

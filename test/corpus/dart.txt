@@ -164,27 +164,28 @@ class A {
   (class_definition
     name: (identifier)
     body: (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          name: (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              name: (identifier)
-              value: (set_or_map_literal
-                (identifier))))
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              name: (identifier)
-              value: (set_or_map_literal
-                (pair
-                  key: (identifier)
-                  value: (string_literal))))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            name: (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                name: (identifier)
+                value: (set_or_map_literal
+                  (identifier))))
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                name: (identifier)
+                value: (set_or_map_literal
+                  (pair
+                    key: (identifier)
+                    value: (string_literal)))))))))))
 
 ================================================================================
 embedded control flow for collections
@@ -203,30 +204,31 @@ class A {
   (class_definition
     name: (identifier)
     body: (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          name: (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              name: (identifier)
-              value: (set_or_map_literal
-                (if_element
-                  condition: (parenthesized_expression
-                    (identifier))
-                  consequence: (identifier)))))
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              name: (identifier)
-              value: (set_or_map_literal
-                (pair
-                  key: (identifier)
-                  value: (string_literal))))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            name: (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                name: (identifier)
+                value: (set_or_map_literal
+                  (if_element
+                    condition: (parenthesized_expression
+                      (identifier))
+                    consequence: (identifier)))))
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                name: (identifier)
+                value: (set_or_map_literal
+                  (pair
+                    key: (identifier)
+                    value: (string_literal)))))))))))
 
 ================================================================================
 Positional Parameters
@@ -245,27 +247,28 @@ class Beyonce {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (formal_parameter
-              (type_identifier)
-              (identifier))
-            (optional_formal_parameters
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list
               (formal_parameter
                 (type_identifier)
                 (identifier))
               (formal_parameter
                 (type_identifier)
-                (identifier))))))
-      (function_body
-        (block
-          (comment))))))
+                (identifier))
+              (optional_formal_parameters
+                (formal_parameter
+                  (type_identifier)
+                  (identifier))
+                (formal_parameter
+                  (type_identifier)
+                  (identifier))))))
+        (function_body
+          (block
+            (comment)))))))
 
 ================================================================================
 collection trailing commas
@@ -404,12 +407,13 @@ extension Hello on String {
     (identifier)
     (type_identifier)
     (extension_body
-      (method_signature
-        (getter_signature
-          (type_identifier)
-          (identifier)))
-      (function_body
-        (string_literal)))))
+      (class_member_definition
+        (method_signature
+          (getter_signature
+            (type_identifier)
+            (identifier)))
+        (function_body
+          (string_literal))))))
 
 ================================================================================
 library directive
@@ -459,40 +463,42 @@ abstract class MyDataClass implements _$MyDataClass {
     (interfaces
       (type_identifier))
     (class_body
-      (declaration
-        (redirecting_factory_constructor_signature
-          (const_builtin)
-          (identifier)
-          (identifier)
-          (formal_parameter_list
-            (optional_formal_parameters
-              (formal_parameter
-                (annotation
-                  (identifier)
-                  (arguments
-                    (argument
-                      (false))))
-                (type_identifier)
-                (identifier))))
-          (type_identifier)))
-      (method_signature
-        (factory_constructor_signature
-          (identifier)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (member_access
-          (identifier)
-          (selector
-            (unconditional_assignable_selector
-              (identifier)))
-          (selector
-            (argument_part
-              (arguments
-                (named_argument
-                  (label
-                    (identifier))
-                  (true))))))))))
+      (class_member_definition
+        (declaration
+          (redirecting_factory_constructor_signature
+            (const_builtin)
+            (identifier)
+            (identifier)
+            (formal_parameter_list
+              (optional_formal_parameters
+                (formal_parameter
+                  (annotation
+                    (identifier)
+                    (arguments
+                      (argument
+                        (false))))
+                  (type_identifier)
+                  (identifier))))
+            (type_identifier))))
+      (class_member_definition
+        (method_signature
+          (factory_constructor_signature
+            (identifier)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (member_access
+            (identifier)
+            (selector
+              (unconditional_assignable_selector
+                (identifier)))
+            (selector
+              (argument_part
+                (arguments
+                  (named_argument
+                    (label
+                      (identifier))
+                    (true)))))))))))
 
 ================================================================================
 setter expressions
@@ -510,20 +516,21 @@ class MyClass {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (setter_signature
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              (identifier)))))
-      (function_body
-        (block
-          (expression_statement
-            (assignment_expression
-              (assignable_expression
-                (identifier))
-              (identifier))))))))
+      (class_member_definition
+        (method_signature
+          (setter_signature
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block
+            (expression_statement
+              (assignment_expression
+                (assignable_expression
+                  (identifier))
+                (identifier)))))))))
 
 ================================================================================
 Basic selector

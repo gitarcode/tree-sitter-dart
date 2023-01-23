@@ -18,51 +18,52 @@ class WhileDemo {
   (class_definition
     name: (identifier)
     body: (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          name: (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              name: (identifier)))))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              name: (identifier)
-              value: (decimal_integer_literal)))
-          (while_statement
-            condition: (parenthesized_expression
-              (relational_expression
-                (identifier)
-                (relational_operator)
-                (decimal_integer_literal)))
-            body: (block
-              (expression_statement
-                (member_access
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            name: (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                name: (identifier)))))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                name: (identifier)
+                value: (decimal_integer_literal)))
+            (while_statement
+              condition: (parenthesized_expression
+                (relational_expression
                   (identifier)
-                  (selector
-                    (unconditional_assignable_selector
-                      (identifier)))
-                  (selector
-                    (unconditional_assignable_selector
-                      (identifier)))
-                  (selector
-                    (argument_part
-                      (arguments
-                        (argument
-                          (additive_expression
-                            (string_literal)
-                            (additive_operator)
-                            (identifier))))))))
-              (expression_statement
-                (postfix_expression
-                  (assignable_expression
-                    (identifier))
-                  (postfix_operator
-                    (increment_operator)))))))))))
+                  (relational_operator)
+                  (decimal_integer_literal)))
+              body: (block
+                (expression_statement
+                  (member_access
+                    (identifier)
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (argument_part
+                        (arguments
+                          (argument
+                            (additive_expression
+                              (string_literal)
+                              (additive_operator)
+                              (identifier))))))))
+                (expression_statement
+                  (postfix_expression
+                    (assignable_expression
+                      (identifier))
+                    (postfix_operator
+                      (increment_operator))))))))))))
 
 ================================================================================
 try-with-resources statements
@@ -203,13 +204,14 @@ class Quack {
     (class_body
       (marker_annotation
         (identifier))
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block)))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block))))))
 
 ================================================================================
 single element annotation
@@ -261,40 +263,41 @@ class LambdaTest {
   (class_definition
     (identifier)
     (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              (identifier)
-              (function_expression
-                (formal_parameter_list
-                  (formal_parameter
-                    (type_identifier)
-                    (identifier)))
-                (function_expression_body
-                  (identifier)))))
-          (local_variable_declaration
-            (initialized_variable_definition
-              (inferred_type)
-              (identifier)
-              (function_expression
-                (formal_parameter_list
-                  (formal_parameter
-                    (type_identifier)
-                    (identifier)))
-                (function_expression_body
-                  (block
-                    (local_variable_declaration
-                      (initialized_variable_definition
-                        (type_identifier)
-                        (identifier)
-                        (decimal_integer_literal)))))))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                (identifier)
+                (function_expression
+                  (formal_parameter_list
+                    (formal_parameter
+                      (type_identifier)
+                      (identifier)))
+                  (function_expression_body
+                    (identifier)))))
+            (local_variable_declaration
+              (initialized_variable_definition
+                (inferred_type)
+                (identifier)
+                (function_expression
+                  (formal_parameter_list
+                    (formal_parameter
+                      (type_identifier)
+                      (identifier)))
+                  (function_expression_body
+                    (block
+                      (local_variable_declaration
+                        (initialized_variable_definition
+                          (type_identifier)
+                          (identifier)
+                          (decimal_integer_literal))))))))))))))
 
 ================================================================================
 switch statement
@@ -324,77 +327,78 @@ class SwitchDemo {
   (class_definition
     name: (identifier)
     body: (class_body
-      (method_signature
-        (function_signature
-          (void_type)
-          name: (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
-              name: (identifier)))))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              name: (identifier)
-              value: (decimal_integer_literal)))
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              name: (identifier)))
-          (switch_statement
-            condition: (parenthesized_expression
-              (identifier))
-            body: (switch_block
-              (switch_label
-                (case_builtin)
-                (decimal_integer_literal))
-              (expression_statement
-                (assignment_expression
-                  left: (assignable_expression
-                    (identifier))
-                  right: (string_literal)))
-              (break_statement)
-              (switch_label
-                (case_builtin)
-                (decimal_integer_literal))
-              (expression_statement
-                (assignment_expression
-                  left: (assignable_expression
-                    (identifier))
-                  right: (string_literal)))
-              (break_statement)
-              (switch_label
-                (case_builtin)
-                (decimal_integer_literal))
-              (expression_statement
-                (assignment_expression
-                  left: (assignable_expression
-                    (identifier))
-                  right: (string_literal)))
-              (break_statement)
-              (switch_label)
-              (expression_statement
-                (assignment_expression
-                  left: (assignable_expression
-                    (identifier))
-                  right: (string_literal)))
-              (break_statement)))
-          (expression_statement
-            (member_access
-              (identifier)
-              (selector
-                (unconditional_assignable_selector
-                  (identifier)))
-              (selector
-                (unconditional_assignable_selector
-                  (identifier)))
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (identifier))))))))))))
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            name: (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                name: (identifier)))))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                name: (identifier)
+                value: (decimal_integer_literal)))
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                name: (identifier)))
+            (switch_statement
+              condition: (parenthesized_expression
+                (identifier))
+              body: (switch_block
+                (switch_label
+                  (case_builtin)
+                  (decimal_integer_literal))
+                (expression_statement
+                  (assignment_expression
+                    left: (assignable_expression
+                      (identifier))
+                    right: (string_literal)))
+                (break_statement)
+                (switch_label
+                  (case_builtin)
+                  (decimal_integer_literal))
+                (expression_statement
+                  (assignment_expression
+                    left: (assignable_expression
+                      (identifier))
+                    right: (string_literal)))
+                (break_statement)
+                (switch_label
+                  (case_builtin)
+                  (decimal_integer_literal))
+                (expression_statement
+                  (assignment_expression
+                    left: (assignable_expression
+                      (identifier))
+                    right: (string_literal)))
+                (break_statement)
+                (switch_label)
+                (expression_statement
+                  (assignment_expression
+                    left: (assignable_expression
+                      (identifier))
+                    right: (string_literal)))
+                (break_statement)))
+            (expression_statement
+              (member_access
+                (identifier)
+                (selector
+                  (unconditional_assignable_selector
+                    (identifier)))
+                (selector
+                  (unconditional_assignable_selector
+                    (identifier)))
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (identifier)))))))))))))
 
 ================================================================================
 type arguments
@@ -415,25 +419,27 @@ class Box <T> {
       (type_parameter
         (type_identifier)))
     (class_body
-      (declaration
-        (type_identifier)
-        (initialized_identifier_list
-          (initialized_identifier
-            (identifier))))
-      (method_signature
-        (constructor_signature
-          (identifier)
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
+      (class_member_definition
+        (declaration
+          (type_identifier)
+          (initialized_identifier_list
+            (initialized_identifier
               (identifier)))))
-      (function_body
-        (block
-          (expression_statement
-            (assignment_expression
-              (assignable_expression
-                (identifier))
-              (identifier)))))
+      (class_member_definition
+        (method_signature
+          (constructor_signature
+            (identifier)
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block
+            (expression_statement
+              (assignment_expression
+                (assignable_expression
+                  (identifier))
+                (identifier))))))
       (comment))))
 
 ================================================================================
@@ -450,13 +456,14 @@ class WildcardDemo {
   (class_definition
     (identifier)
     (class_body
-      (declaration
-        (type_identifier)
-        (type_arguments
-          (type_identifier))
-        (initialized_identifier_list
-          (initialized_identifier
-            (identifier)))))))
+      (class_member_definition
+        (declaration
+          (type_identifier)
+          (type_arguments
+            (type_identifier))
+          (initialized_identifier_list
+            (initialized_identifier
+              (identifier))))))))
 
 ================================================================================
 type arguments with generic types
@@ -482,73 +489,75 @@ class someClass <T> {
       (type_parameter
         (type_identifier)))
     (class_body
-      (method_signature
-        (function_signature
-          (type_identifier)
-          (type_arguments
-            (type_identifier))
-          (identifier)
-          (formal_parameter_list)))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              (type_arguments
-                (type_identifier))
-              (identifier)
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (type_identifier)
+            (type_arguments
+              (type_identifier))
+            (identifier)
+            (formal_parameter_list)))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                (type_arguments
+                  (type_identifier))
+                (identifier)
+                (member_access
+                  (identifier)
+                  (selector
+                    (unconditional_assignable_selector
+                      (identifier)))
+                  (selector
+                    (argument_part
+                      (type_arguments
+                        (type_identifier))
+                      (arguments))))))
+            (expression_statement
               (member_access
                 (identifier)
                 (selector
-                  (unconditional_assignable_selector
-                    (identifier)))
-                (selector
                   (argument_part
                     (type_arguments
+                      (type_identifier)
                       (type_identifier))
-                    (arguments))))))
-          (expression_statement
-            (member_access
-              (identifier)
-              (selector
-                (argument_part
-                  (type_arguments
-                    (type_identifier)
-                    (type_identifier))
-                  (arguments
-                    (argument
-                      (identifier)))))))
-          (return_statement
-            (identifier))))
-      (method_signature
-        (function_signature
-          (void_type)
-          (identifier)
-          (type_parameters
-            (type_parameter
-              (type_identifier)))
-          (formal_parameter_list
-            (formal_parameter
-              (type_identifier)
+                    (arguments
+                      (argument
+                        (identifier)))))))
+            (return_statement
               (identifier)))))
-      (function_body
-        (block
-          (local_variable_declaration
-            (initialized_variable_definition
-              (type_identifier)
-              (type_arguments
-                (type_identifier))
-              (identifier)
-              (member_access
+      (class_member_definition
+        (method_signature
+          (function_signature
+            (void_type)
+            (identifier)
+            (type_parameters
+              (type_parameter
+                (type_identifier)))
+            (formal_parameter_list
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (function_body
+          (block
+            (local_variable_declaration
+              (initialized_variable_definition
+                (type_identifier)
+                (type_arguments
+                  (type_identifier))
                 (identifier)
-                (selector
-                  (unconditional_assignable_selector
-                    (identifier)))
-                (selector
-                  (argument_part
-                    (type_arguments
-                      (type_identifier))
-                    (arguments)))))))))))
+                (member_access
+                  (identifier)
+                  (selector
+                    (unconditional_assignable_selector
+                      (identifier)))
+                  (selector
+                    (argument_part
+                      (type_arguments
+                        (type_identifier))
+                      (arguments))))))))))))
 
 ================================================================================
 empty type arguments
