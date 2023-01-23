@@ -167,19 +167,6 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "function_signature"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "function_body"
-            }
-          ]
-        },
-        {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
               "name": "getter_signature"
             },
             {
@@ -10223,10 +10210,6 @@
     ],
     [
       "_postfix_expression"
-    ],
-    [
-      "_top_level_definition",
-      "lambda_expression"
     ],
     [
       "_top_level_definition",

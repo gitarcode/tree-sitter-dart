@@ -7573,10 +7573,6 @@
           "named": true
         },
         {
-          "type": "function_signature",
-          "named": true
-        },
-        {
           "type": "function_type",
           "named": true
         },

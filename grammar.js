@@ -117,7 +117,7 @@ module.exports = grammar({
         [$._expression],
         // [$._real_expression, $._below_relational_expression],
         [$._postfix_expression],
-        [$._top_level_definition, $.lambda_expression],
+        // [$._top_level_definition, $.lambda_expression],
         [$._top_level_definition, $._var_or_type, $.function_signature],
         [$._var_or_type, $.function_signature],
         [$._var_or_type, $._function_formal_parameter],
@@ -204,10 +204,10 @@ module.exports = grammar({
             $.mixin_declaration,
             $.type_alias,
             $.external_declaration,
-            seq(
-                $.function_signature,
-                $.function_body
-            ),
+            // seq(
+            //     $.function_signature,
+            //     $.function_body
+            // ),
             seq(
                 $.getter_signature,
                 // optional($._type),
