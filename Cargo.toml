@@ -1,7 +1,7 @@
 [package]
 name = "tree-sitter-dart"
 description = "dart grammar for the tree-sitter parsing library"
-version = "0.0.2"
+version = "0.0.3"
 keywords = ["incremental", "parsing", "dart"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/ast-grep/tree-sitter-dart"
