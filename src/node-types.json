@@ -198,6 +198,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -215,10 +219,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -356,6 +356,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -373,10 +377,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -556,6 +556,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -573,10 +577,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -814,6 +814,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -831,10 +835,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -1010,6 +1010,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -1027,10 +1031,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -1094,6 +1094,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "new_expression",
           "named": true
         },
@@ -1103,10 +1107,6 @@
         },
         {
           "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -1220,6 +1220,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -1237,10 +1241,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -1340,6 +1340,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -1357,10 +1361,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -1455,6 +1455,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -1472,10 +1476,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -1616,6 +1616,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -1633,10 +1637,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -1928,6 +1928,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -1945,10 +1949,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -2046,6 +2046,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -2063,10 +2067,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -2161,6 +2161,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -2178,10 +2182,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -2749,6 +2749,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -2766,10 +2770,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -2963,6 +2963,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -2980,10 +2984,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -3211,6 +3211,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -3228,10 +3232,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -3357,6 +3357,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -3378,10 +3382,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -3503,6 +3503,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -3520,10 +3524,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -3629,6 +3629,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -3646,10 +3650,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -3761,6 +3761,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -3778,10 +3782,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -3883,6 +3883,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -3900,10 +3904,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -4184,6 +4184,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -4201,10 +4205,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -4345,6 +4345,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -4362,10 +4366,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -4623,6 +4623,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -4644,10 +4648,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -4771,6 +4771,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -4792,10 +4796,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -4899,6 +4899,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -4916,10 +4920,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -5009,6 +5009,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -5026,10 +5030,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -5215,6 +5215,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -5232,10 +5236,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -5347,6 +5347,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -5364,10 +5368,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -5499,6 +5499,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -5516,10 +5520,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -5869,6 +5869,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -5890,10 +5894,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6038,6 +6038,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -6055,10 +6059,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6153,6 +6153,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -6170,10 +6174,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6225,6 +6225,57 @@
           }
         ]
       }
+    }
+  },
+  {
+    "type": "member_access",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_literal",
+          "named": true
+        },
+        {
+          "type": "const_object_expression",
+          "named": true
+        },
+        {
+          "type": "function_expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "new_expression",
+          "named": true
+        },
+        {
+          "type": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "type": "selector",
+          "named": true
+        },
+        {
+          "type": "super",
+          "named": true
+        },
+        {
+          "type": "this",
+          "named": true
+        },
+        {
+          "type": "unconditional_assignable_selector",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -6426,6 +6477,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_operator",
           "named": true
         },
@@ -6439,10 +6494,6 @@
         },
         {
           "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6542,6 +6593,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -6559,10 +6614,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6815,6 +6866,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -6832,10 +6887,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -6976,6 +7027,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -6993,10 +7048,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -7098,6 +7149,10 @@
             "named": true
           },
           {
+            "type": "member_access",
+            "named": true
+          },
+          {
             "type": "multiplicative_expression",
             "named": true
           },
@@ -7115,10 +7170,6 @@
           },
           {
             "type": "relational_expression",
-            "named": true
-          },
-          {
-            "type": "selector",
             "named": true
           },
           {
@@ -7245,6 +7296,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -7262,10 +7317,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -7551,6 +7602,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "mixin_declaration",
           "named": true
         },
@@ -7584,10 +7639,6 @@
         },
         {
           "type": "script_tag",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -7783,6 +7834,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -7804,10 +7859,6 @@
         },
         {
           "type": "relational_operator",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -7915,6 +7966,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -7932,10 +7987,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8112,6 +8163,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -8133,10 +8188,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8293,6 +8344,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -8310,10 +8365,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8425,6 +8476,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -8442,10 +8497,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8552,6 +8603,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -8569,10 +8624,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8827,6 +8878,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -8844,10 +8899,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -8999,6 +9050,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -9016,10 +9071,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -9131,6 +9182,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -9148,10 +9203,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -9254,6 +9305,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -9271,10 +9326,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -9568,6 +9619,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -9585,10 +9640,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -9756,6 +9807,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -9773,10 +9828,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -9882,6 +9933,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "minus_operator",
           "named": true
         },
@@ -9899,10 +9954,6 @@
         },
         {
           "type": "prefix_operator",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -10076,6 +10127,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -10093,10 +10148,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {
@@ -10203,6 +10254,10 @@
           "named": true
         },
         {
+          "type": "member_access",
+          "named": true
+        },
+        {
           "type": "multiplicative_expression",
           "named": true
         },
@@ -10220,10 +10275,6 @@
         },
         {
           "type": "relational_expression",
-          "named": true
-        },
-        {
-          "type": "selector",
           "named": true
         },
         {

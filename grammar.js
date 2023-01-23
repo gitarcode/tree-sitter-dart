@@ -163,13 +163,16 @@ module.exports = grammar({
         [$._type_not_void_not_function],
         [$.super_formal_parameter, $.unconditional_assignable_selector],
         [$.function_signature],
+        [$.assignable_expression, $.member_access, $._postfix_expression],
+        [$._assignable_selector_part, $.member_access],
+        [$.member_access],
     ],
 
     word: $ => $.identifier,
 
     rules: {
 
-        // Page 188 libraryDeclaration 
+        // Page 188 libraryDeclaration
         program: $ => seq(
             optional($.script_tag),
             optional($.library_name),
@@ -205,7 +208,7 @@ module.exports = grammar({
                 $.setter_signature,
                 $._semicolon
             ),
-     
+
             seq(
                 $.function_signature,
                 $.function_body
@@ -226,7 +229,7 @@ module.exports = grammar({
                 $.function_body
             ),
 
-            //    final or const static final declaration list            
+            //    final or const static final declaration list
             seq(
                 choice(
                     $.final_builtin,
@@ -250,7 +253,7 @@ module.exports = grammar({
                 $._semicolon
             )
         ),
-        
+
 /**************************************************************************************************
 *********************************Literals**********************************************************
 ***************************************************************************************************
@@ -274,7 +277,7 @@ module.exports = grammar({
 /****This is the symbol literals from section 16.8 (Page 99) of the dart specification****************/
         symbol_literal: $ => seq('#', $.identifier),
         //symbol literal can also be an operator?
-        
+
 /**************************************************************************************************
 *********************************Numeric Literals**************************************************
 ***************************************************************************************************
@@ -288,7 +291,7 @@ module.exports = grammar({
             choice('0x', '0X'),
             HEX_DIGITS
         )),
-        
+
         decimal_floating_point_literal: $ => token(choice(
             seq(DIGITS, '.', DIGITS, optional(seq((/[eE]/), optional(choice('-', '+')), DIGITS))),
             seq('.', DIGITS, optional(seq((/[eE]/), optional(choice('-', '+')), DIGITS))),
@@ -471,8 +474,8 @@ module.exports = grammar({
             )
         )),
         escape_sequence: $ => $._unused_escape_sequence,
-       
-        
+
+
 /**************************************************************************************************
 *********************************Collection Literals***********************************************
 ***************************************************************************************************
@@ -491,7 +494,7 @@ module.exports = grammar({
             ),
             '}'
         ),
-    
+
         pair: $ => seq(
             field('key', $._expression),
             ':',
@@ -936,13 +939,13 @@ module.exports = grammar({
             )
         ),
 
+        member_access: $ => seq(
+          $._primary,
+          repeat1($.selector),
+        ) ,
         _postfix_expression: $ => choice(
-            seq(
-                $._primary,
-                repeat(
-                    $.selector
-                )
-            ),
+            $._primary,
+            $.member_access,
             $.postfix_expression
         ),
 
@@ -1039,7 +1042,7 @@ module.exports = grammar({
             ),
             $.arguments
         ),
-       
+
 
         _primary: $ => choice(
             $._literal,
@@ -1466,7 +1469,7 @@ module.exports = grammar({
             $.enum_declaration,
         )),
 
-       
+
 
         requires_modifier: $ => choice(
             'transitive',
@@ -1589,14 +1592,14 @@ module.exports = grammar({
         )),
 
         type_alias: $ => choice(
-            seq($._typedef, 
-                $._type_name, 
-                optional($.type_parameters), 
+            seq($._typedef,
+                $._type_name,
+                optional($.type_parameters),
                 '=', $.function_type, ';'),
 
-            seq($._typedef, 
-                optional($._type), 
-                $._type_name, 
+            seq($._typedef,
+                optional($._type),
+                $._type_name,
                 $._formal_parameter_part, ';'),
         ),
 
@@ -1646,7 +1649,7 @@ module.exports = grammar({
                 // Changes made in https://github.com/flutter/flutter/pull/48547
                 /* This is also a comment */
                 /* this comment /* // /** ends here: */
-                
+
             optional($._nullable_type),
             optional($.type_bound)
         ),
@@ -1752,7 +1755,7 @@ module.exports = grammar({
         method_signature: $ => choice(
             seq($.constructor_signature, optional($.initializers)),
             $.factory_constructor_signature,
-           
+
             seq(
                 optional($._static),
                 choice(
@@ -1791,7 +1794,7 @@ module.exports = grammar({
                 optional($._external_and_static),
                 $.setter_signature,
             ),
-            
+
             seq(
                 optional($._external),
                 $.operator_signature
@@ -2352,9 +2355,9 @@ module.exports = grammar({
             $.formal_parameter_list
         ),
 
-        
+
         formal_parameter_list: $ => $._strict_formal_parameter_list,
-        
+
         _strict_formal_parameter_list: $ => choice(
             seq(
                 '(',
@@ -2388,7 +2391,7 @@ module.exports = grammar({
             $._named_formal_parameters
         ),
 
-       
+
 
         positional_parameters: $ => seq(
             '[',
@@ -2711,7 +2714,7 @@ module.exports = grammar({
         //TODO: add support for triple-slash comments as a special category.
         // Trying to add support for nested multiline comments.
         // http://stackoverflow.com/questions/13014947/regex-to-match-a-c-style-multiline-comment/36328890#36328890
-        
+
         // _line_comment: $ => token(seq(
         //     '//', /[^\/].*/
         //   )),
@@ -2727,7 +2730,7 @@ module.exports = grammar({
             )
         ),
         //added nesting comments.
-        documentation_comment: $ => 
+        documentation_comment: $ =>
             choice(
                 $._documentation_block_comment,
                 seq('///', /.*/),
