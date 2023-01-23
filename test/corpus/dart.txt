@@ -137,14 +137,16 @@ String hello(r) => 'hello';
 --------------------------------------------------------------------------------
 
 (program
-  (function_signature
-    (type_identifier)
-    (identifier)
-    (formal_parameter_list
-      (formal_parameter
-        (identifier))))
-  (function_body
-    (string_literal)))
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
+        (type_identifier)
+        (identifier)
+        (formal_parameter_list
+          (formal_parameter
+            (identifier))))
+      (function_body
+        (string_literal)))))
 
 ================================================================================
 dart set literals
@@ -276,17 +278,17 @@ final set = {"hello", "world"};
 --------------------------------------------------------------------------------
 
 (program
-  (final_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
       (identifier)
       (set_or_map_literal
         (pair
           (string_literal)
           (string_literal)))))
-  (final_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
       (identifier)
       (set_or_map_literal
         (string_literal)
@@ -304,10 +306,10 @@ final dynamic opts = <dynamic, dynamic>{
 --------------------------------------------------------------------------------
 
 (program
-  (final_builtin)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
+      (type_identifier)
       (identifier)
       (set_or_map_literal
         (type_arguments
@@ -332,34 +334,36 @@ void main() {
 --------------------------------------------------------------------------------
 
 (program
-  (function_signature
-    (void_type)
-    (identifier)
-    (formal_parameter_list))
-  (function_body
-    (block
-      (expression_statement
-        (unary_expression
-          (await_expression
-            (member_access
-              (identifier)
-              (selector
-                (unconditional_assignable_selector
-                  (identifier)))
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (member_access
-                        (decimal_integer_literal)
-                        (selector
-                          (unconditional_assignable_selector
-                            (identifier)))))
-                    (argument
-                      (function_expression
-                        (formal_parameter_list)
-                        (function_expression_body
-                          (block))))))))))))))
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
+        (void_type)
+        (identifier)
+        (formal_parameter_list))
+      (function_body
+        (block
+          (expression_statement
+            (unary_expression
+              (await_expression
+                (member_access
+                  (identifier)
+                  (selector
+                    (unconditional_assignable_selector
+                      (identifier)))
+                  (selector
+                    (argument_part
+                      (arguments
+                        (argument
+                          (member_access
+                            (decimal_integer_literal)
+                            (selector
+                              (unconditional_assignable_selector
+                                (identifier)))))
+                        (argument
+                          (function_expression
+                            (formal_parameter_list)
+                            (function_expression_body
+                              (block))))))))))))))))
 
 ================================================================================
 part directive
@@ -534,21 +538,23 @@ void main() {
 --------------------------------------------------------------------------------
 
 (program
-  (function_signature
-    (void_type)
-    (identifier)
-    (formal_parameter_list))
-  (function_body
-    (block
-      (expression_statement
-        (member_access
-          (identifier)
-          (selector
-            (argument_part
-              (arguments
-                (argument
-                  (member_access
-                    (identifier)
-                    (selector
-                      (unconditional_assignable_selector
-                        (identifier)))))))))))))
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
+        (void_type)
+        (identifier)
+        (formal_parameter_list))
+      (function_body
+        (block
+          (expression_statement
+            (member_access
+              (identifier)
+              (selector
+                (argument_part
+                  (arguments
+                    (argument
+                      (member_access
+                        (identifier)
+                        (selector
+                          (unconditional_assignable_selector
+                            (identifier)))))))))))))))

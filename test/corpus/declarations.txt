@@ -402,9 +402,9 @@ var x = 0;
 --------------------------------------------------------------------------------
 
 (program
-  (inferred_type)
-  (initialized_identifier_list
-    (initialized_identifier
+  (local_variable_declaration
+    (initialized_variable_definition
+      (inferred_type)
       (identifier)
       (decimal_integer_literal))))
 
@@ -418,11 +418,11 @@ final y = 0;
 --------------------------------------------------------------------------------
 
 (program
-  (marker_annotation
-    (identifier))
-  (final_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (marker_annotation
+        (identifier))
+      (final_builtin)
       (identifier)
       (decimal_integer_literal))))
 
@@ -438,26 +438,26 @@ const String z1 = "100";
 --------------------------------------------------------------------------------
 
 (program
-  (final_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
       (identifier)
       (decimal_floating_point_literal)))
-  (final_builtin)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
+      (type_identifier)
       (identifier)
       (decimal_floating_point_literal)))
-  (const_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (const_builtin)
       (identifier)
       (string_literal)))
-  (const_builtin)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (const_builtin)
+      (type_identifier)
       (identifier)
       (string_literal))))
 
@@ -470,9 +470,9 @@ final $y$ = 0;
 --------------------------------------------------------------------------------
 
 (program
-  (final_builtin)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
       (identifier)
       (decimal_integer_literal))))
 
@@ -582,11 +582,11 @@ class MyClass {
 --------------------------------------------------------------------------------
 
 (program
-  (type_identifier)
-  (type_arguments
-    (type_identifier))
-  (initialized_identifier_list
-    (initialized_identifier
+  (local_variable_declaration
+    (initialized_variable_definition
+      (type_identifier)
+      (type_arguments
+        (type_identifier))
       (identifier)
       (list_literal
         (string_literal)
@@ -594,10 +594,10 @@ class MyClass {
         (string_literal)
         (string_literal)
         (string_literal))))
-  (final_builtin)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
+      (type_identifier)
       (identifier)
       (string_literal)))
   (class_definition
@@ -614,21 +614,23 @@ void callback(Future<void> Function(String?) handler) {
 --------------------------------------------------------------------------------
 
 (program
-  (function_signature
-    (void_type)
-    (identifier)
-    (formal_parameter_list
-      (formal_parameter
-        (function_type
-          (type_identifier)
-          (type_arguments
-            (void_type))
-          (parameter_type_list
-            (normal_parameter_type
-              (type_identifier))))
-        (identifier))))
-  (function_body
-    (block)))
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
+        (void_type)
+        (identifier)
+        (formal_parameter_list
+          (formal_parameter
+            (function_type
+              (type_identifier)
+              (type_arguments
+                (void_type))
+              (parameter_type_list
+                (normal_parameter_type
+                  (type_identifier))))
+            (identifier))))
+      (function_body
+        (block)))))
 
 ================================================================================
 Type with Library Prefix
@@ -639,11 +641,11 @@ const my.MyType newMyType = my.MyType();
 --------------------------------------------------------------------------------
 
 (program
-  (const_builtin)
-  (type_identifier)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (const_builtin)
+      (type_identifier)
+      (type_identifier)
       (identifier)
       (member_access
         (identifier)
@@ -692,11 +694,11 @@ if (blah) {
 --------------------------------------------------------------------------------
 
 (program
-  (final_builtin)
-  (type_identifier)
-  (type_identifier)
-  (static_final_declaration_list
-    (static_final_declaration
+  (local_variable_declaration
+    (initialized_variable_definition
+      (final_builtin)
+      (type_identifier)
+      (type_identifier)
       (identifier)
       (member_access
         (identifier)
@@ -739,19 +741,21 @@ void _invoke(void callback()?, Zone? zone) {
 --------------------------------------------------------------------------------
 
 (program
-  (function_signature
-    (void_type)
-    (identifier)
-    (formal_parameter_list
-      (formal_parameter
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
         (void_type)
         (identifier)
-        (formal_parameter_list))
-      (formal_parameter
-        (type_identifier)
-        (identifier))))
-  (function_body
-    (block)))
+        (formal_parameter_list
+          (formal_parameter
+            (void_type)
+            (identifier)
+            (formal_parameter_list))
+          (formal_parameter
+            (type_identifier)
+            (identifier))))
+      (function_body
+        (block)))))
 
 ================================================================================
 Get and set methods (not keyword)
@@ -768,17 +772,19 @@ class MyClass {
 
 (program
   (comment)
-  (function_signature
-    (type_identifier)
-    (identifier)
-    (formal_parameter_list
-      (formal_parameter
+  (local_function_declaration
+    (lambda_expression
+      (function_signature
         (type_identifier)
-        (identifier))))
-  (function_body
-    (string_literal
-      (template_substitution
-        (identifier_dollar_escaped))))
+        (identifier)
+        (formal_parameter_list
+          (formal_parameter
+            (type_identifier)
+            (identifier))))
+      (function_body
+        (string_literal
+          (template_substitution
+            (identifier_dollar_escaped))))))
   (class_definition
     (identifier)
     (class_body
