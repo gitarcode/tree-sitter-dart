@@ -1,16 +1,18 @@
-===================================================
+================================================================================
 Weird file
-===================================================
+================================================================================
 
 
 d
 
----------------
-(program (identifier))
+--------------------------------------------------------------------------------
 
-================================
-big test 
-================================
+(program
+  (identifier))
+
+================================================================================
+big test
+================================================================================
 abstract class IOSApp extends ApplicationPackage {
   IOSApp({required String projectBundleId}) : super(id: projectBundleId);
 
@@ -74,139 +76,414 @@ class BuildableIOSApp extends IOSApp {
   }
 }
 
----
+--------------------------------------------------------------------------------
 
-(program (class_definition (identifier) (superclass (type_identifier)) 
-(class_body (declaration (constructor_signature (identifier) 
-(formal_parameter_list (optional_formal_parameters 
-(formal_parameter (type_identifier) (identifier))))) (initializers
- (initializer_list_entry (arguments (named_argument (label (identifier)) 
-(identifier)))))) (marker_annotation (identifier)) 
-(method_signature (getter_signature 
-(type_identifier) (identifier))) (function_body (identifier)) (declaration 
-(getter_signature (type_identifier) (identifier))) (declaration
- (getter_signature (type_identifier) (identifier))) (documentation_comment) 
- (documentation_comment) (declaration (getter_signature (type_identifier) (identifier)))))
-  (class_definition (identifier) (superclass (type_identifier)) 
-  (class_body (declaration (constructor_signature (identifier) 
-  (formal_parameter_list (formal_parameter (constructor_param (this) (identifier))) 
-  (formal_parameter (type_identifier) (identifier)) 
-  (formal_parameter (type_identifier) (identifier)))) 
-  (initializers (initializer_list_entry (field_initializer (identifier) (identifier))) 
-  (initializer_list_entry (arguments (named_argument (label (identifier)) (identifier)))))) 
-  (method_signature (function_signature (type_identifier) (type_arguments
-   (type_identifier)) (identifier) (formal_parameter_list 
-(formal_parameter (type_identifier) (identifier)) 
+(program
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (constructor_signature
+          (identifier)
+          (formal_parameter_list
+            (optional_formal_parameters
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (initializers
+          (initializer_list_entry
+            (arguments
+              (named_argument
+                (label
+                  (identifier))
+                (identifier))))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (identifier))
+      (declaration
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (declaration
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (documentation_comment)
+      (documentation_comment)
+      (declaration
+        (getter_signature
+          (type_identifier)
+          (identifier)))))
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (constructor_signature
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (type_identifier)
+              (identifier))
+            (formal_parameter
+              (type_identifier)
+              (identifier))))
+        (initializers
+          (initializer_list_entry
+            (field_initializer
+              (identifier)
+              (identifier)))
+          (initializer_list_entry
+            (arguments
+              (named_argument
+                (label
+                  (identifier))
+                (identifier))))))
+      (method_signature
+        (function_signature
+          (type_identifier)
+          (type_arguments
+            (type_identifier))
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (type_identifier)
+              (identifier))
+            (formal_parameter
+              (type_identifier)
+              (identifier)))))
+      (function_body
+        (block
+          (local_variable_declaration
+            (initialized_variable_definition
+              (final_builtin)
+              (type_identifier)
+              (identifier)
+              (unary_expression
+                (await_expression
+                  (member_access
+                    (identifier)
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (argument_part
+                        (arguments
+                          (argument
+                            (identifier))))))))))
+          (local_variable_declaration
+            (initialized_variable_definition
+              (final_builtin)
+              (type_identifier)
+              (identifier)
+              (unary_expression
+                (await_expression
+                  (member_access
+                    (identifier)
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (argument_part
+                        (arguments
+                          (argument
+                            (identifier))))))))))
+          (if_statement
+            (parenthesized_expression
+              (equality_expression
+                (identifier)
+                (equality_operator)
+                (null_literal)))
+            (block
+              (return_statement
+                (member_access
+                  (identifier)
+                  (selector
+                    (argument_part
+                      (arguments
+                        (argument
+                          (identifier))
+                        (argument
+                          (identifier))
+                        (argument
+                          (identifier)))))))))
+          (return_statement
+            (null_literal))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (identifier))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (string_literal)))))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (string_literal)))))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (member_access
+                    (identifier)
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (unconditional_assignable_selector
+                        (identifier)))
+                    (selector
+                      (argument_part
+                        (arguments
+                          (argument
+                            (member_access
+                              (identifier)
+                              (selector
+                                (argument_part
+                                  (arguments)))))
+                          (argument
+                            (string_literal))))))))))))
+      (comment)
+      (comment)
+      (comment)
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (member_access
+                    (identifier)
+                    (selector
+                      (argument_part
+                        (arguments)))))
+                (argument
+                  (string_literal))
+                (argument
+                  (conditional_expression
+                    (equality_expression
+                      (identifier)
+                      (equality_operator)
+                      (null_literal))
+                    (string_literal)
+                    (member_access
+                      (identifier)
+                      (selector
+                        (unconditional_assignable_selector
+                          (identifier)))
+                      (selector
+                        (unconditional_assignable_selector
+                          (identifier)))
+                      (selector
+                        (unconditional_assignable_selector
+                          (identifier)))
+                      (selector
+                        (argument_part
+                          (arguments
+                            (argument
+                              (member_access
+                                (identifier)
+                                (selector))))))))))))))
+      (comment)
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (identifier))
+                (argument
+                  (string_literal)))))))
+      (method_signature
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (member_access
+                    (identifier)
+                    (selector
+                      (argument_part
+                        (arguments)))))
+                (argument
+                  (string_literal)))))))
+      (method_signature
+        (function_signature
+          (type_identifier)
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (type_identifier)
+              (identifier)))))
+      (function_body
+        (block
+          (return_statement
+            (member_access
+              (identifier)
+              (selector
+                (unconditional_assignable_selector
+                  (identifier)))
+              (selector
+                (unconditional_assignable_selector
+                  (identifier)))
+              (selector
+                (unconditional_assignable_selector
+                  (identifier)))
+              (selector
+                (argument_part
+                  (arguments
+                    (argument
+                      (member_access
+                        (identifier)
+                        (selector
+                          (argument_part
+                            (arguments)))))
+                    (argument
+                      (identifier))
+                    (argument
+                      (identifier))))))))))))
 
-
-
-  (formal_parameter (type_identifier) (identifier))))) 
-      (function_body 
-          (block 
-              (local_variable_declaration 
-                  (initialized_variable_definition (final_builtin) (type_identifier) 
-                      (identifier) 
-                      (unary_expression (await_expression (identifier) 
-                      (selector (unconditional_assignable_selector
-                       (identifier))) (selector (argument_part (arguments (argument (identifier))))))))) 
-              (local_variable_declaration (initialized_variable_definition (final_builtin) 
-                  (type_identifier) (identifier) (unary_expression (await_expression (identifier) 
-                  (selector (unconditional_assignable_selector (identifier))) 
-                  (selector (argument_part (arguments (argument (identifier))))))))) 
-                  (if_statement (parenthesized_expression (equality_expression (identifier) 
-                  (equality_operator) (null_literal))) (block (return_statement (identifier) 
-                  (selector (argument_part (arguments (argument (identifier)) (argument (identifier)) 
-                  (argument (identifier))))))))
-                   (return_statement (null_literal)))) 
-                   (declaration (final_builtin) (type_identifier) 
-                   (initialized_identifier_list (initialized_identifier (identifier)))) 
-                   (declaration (final_builtin) (type_identifier) 
-                   (initialized_identifier_list (initialized_identifier (identifier))))
-                    (marker_annotation (identifier)) 
-                    (method_signature (getter_signature (type_identifier)  
- (identifier))) (function_body (identifier)) (marker_annotation (identifier)) (method_signature 
-(getter_signature (type_identifier) (identifier))) (function_body (identifier) 
-(selector (argument_part (arguments (argument (string_literal)))))) 
-(marker_annotation (identifier)) 
-(method_signature (getter_signature (type_identifier) (identifier))) 
-  (function_body (identifier) 
-  (selector (argument_part (arguments (argument (string_literal)))))) 
-  (marker_annotation (identifier)) 
-(method_signature (getter_signature (type_identifier) (identifier))) 
-  (function_body (identifier) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier) 
-    (selector (argument_part (arguments)))) (argument (string_literal)))))))))) 
-    (comment) (comment) (comment) 
-    (method_signature (getter_signature (type_identifier) (identifier))) 
-    (function_body (identifier) (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier) 
-(selector (argument_part (arguments)))) (argument (string_literal)) 
-(argument 
-    (conditional_expression (equality_expression (identifier) 
-    (equality_operator) (null_literal)) (string_literal) (identifier) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier) 
-    (selector))))))))))) 
-    (comment) 
-(method_signature (getter_signature (type_identifier) (identifier))) 
-(function_body (identifier) (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier)) (argument (string_literal)))))) 
-(method_signature (getter_signature (type_identifier) (identifier))) 
-    (function_body (identifier) (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (unconditional_assignable_selector (identifier))) 
-    (selector (argument_part (arguments (argument (identifier) 
-    (selector (argument_part (arguments)))) (argument (string_literal)))))) 
-(method_signature 
-    (function_signature (type_identifier) (identifier) 
-    (formal_parameter_list (formal_parameter (type_identifier) (identifier))))) 
-(function_body (block (return_statement (identifier) 
-(selector (unconditional_assignable_selector (identifier))) 
-(selector (unconditional_assignable_selector (identifier))) 
-(selector (unconditional_assignable_selector (identifier))) 
-(selector (argument_part (arguments (argument (identifier) 
-(selector (argument_part (arguments)))) (argument (identifier)) (argument (identifier))))))))))) 
-
-=====================================
+================================================================================
 more tests
-======================================
+================================================================================
 typedef RpcPeerConnectionFunction = Future<vms.VmService> Function(
   Uri uri, {
   required Duration timeout,
 });
 
----
+--------------------------------------------------------------------------------
 
-(program 
-    (type_alias
-         (type_identifier) 
-            (function_type (type_identifier) 
-                (type_arguments (type_identifier) (type_identifier)) 
-                    (parameter_type_list 
-                        (normal_parameter_type 
-                            (typed_identifier 
-                                (type_identifier) (identifier)
-                                )
-                            ) 
-                        (optional_parameter_types 
-                            (named_parameter_types 
-                                (typed_identifier (type_identifier) (identifier)))))))) 
+(program
+  (type_alias
+    (type_identifier)
+    (function_type
+      (type_identifier)
+      (type_arguments
+        (type_identifier)
+        (type_identifier))
+      (parameter_type_list
+        (normal_parameter_type
+          (typed_identifier
+            (type_identifier)
+            (identifier)))
+        (optional_parameter_types
+          (named_parameter_types
+            (typed_identifier
+              (type_identifier)
+              (identifier))))))))
 
-=======================================
+================================================================================
 more tests2
-=======================================
+================================================================================
   static bool? _boolAttribute(
       String resourceId,
       String name,
@@ -226,36 +503,88 @@ more tests2
     return value == 'true';
   }
 
----
+--------------------------------------------------------------------------------
 
-(program (function_signature (type_identifier) (ERROR 
-(identifier)) (identifier) 
-  (formal_parameter_list 
-    (formal_parameter 
-      (type_identifier) (identifier)) (formal_parameter (type_identifier) (identifier)) 
-    (formal_parameter 
-      (type_identifier) (type_arguments (type_identifier) (type_identifier))
-      (identifier)) 
-    (formal_parameter (type_identifier) (identifier)))
-    ) 
-      (function_body (block (local_variable_declaration 
-      (initialized_variable_definition (final_builtin) (type_identifier) (identifier)
-        (identifier) (selector (unconditional_assignable_selector (index_selector (identifier)))))) 
-        (if_statement (parenthesized_expression (equality_expression (identifier) (equality_operator) 
-        (null_literal))) (block (return_statement (null_literal)))) 
-        (if_statement (parenthesized_expression (logical_and_expression 
-        (equality_expression (identifier) (equality_operator) (string_literal))
-        (equality_expression (identifier) (equality_operator) (string_literal)))) 
-        (block (expression_statement (throw_expression (identifier) 
-        (selector (argument_part (arguments (argument (string_literal 
-        (template_substitution (identifier_dollar_escaped)) 
-        (template_substitution (identifier_dollar_escaped)) 
-        (template_substitution (identifier_dollar_escaped))))))))))) 
-        (return_statement (equality_expression (identifier) (equality_operator) (string_literal))))))
+(program
+  (function_signature
+    (type_identifier)
+    (ERROR
+      (identifier))
+    (identifier)
+    (formal_parameter_list
+      (formal_parameter
+        (type_identifier)
+        (identifier))
+      (formal_parameter
+        (type_identifier)
+        (identifier))
+      (formal_parameter
+        (type_identifier)
+        (type_arguments
+          (type_identifier)
+          (type_identifier))
+        (identifier))
+      (formal_parameter
+        (type_identifier)
+        (identifier))))
+  (function_body
+    (block
+      (local_variable_declaration
+        (initialized_variable_definition
+          (final_builtin)
+          (type_identifier)
+          (identifier)
+          (member_access
+            (identifier)
+            (selector
+              (unconditional_assignable_selector
+                (index_selector
+                  (identifier)))))))
+      (if_statement
+        (parenthesized_expression
+          (equality_expression
+            (identifier)
+            (equality_operator)
+            (null_literal)))
+        (block
+          (return_statement
+            (null_literal))))
+      (if_statement
+        (parenthesized_expression
+          (logical_and_expression
+            (equality_expression
+              (identifier)
+              (equality_operator)
+              (string_literal))
+            (equality_expression
+              (identifier)
+              (equality_operator)
+              (string_literal))))
+        (block
+          (expression_statement
+            (throw_expression
+              (member_access
+                (identifier)
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (string_literal
+                          (template_substitution
+                            (identifier_dollar_escaped))
+                          (template_substitution
+                            (identifier_dollar_escaped))
+                          (template_substitution
+                            (identifier_dollar_escaped))))))))))))
+      (return_statement
+        (equality_expression
+          (identifier)
+          (equality_operator)
+          (string_literal))))))
 
-===========================================
+================================================================================
 more tests 2
-===========================================
+================================================================================
 
 /// A doctor validator for both Intellij and Android Studio.
 abstract class IntelliJValidator extends DoctorValidator {
@@ -279,34 +608,92 @@ abstract class IntelliJValidator extends DoctorValidator {
   };
 }
 
----
+--------------------------------------------------------------------------------
 
-(program 
-  (documentation_comment) 
-  (class_definition (identifier) (superclass (type_identifier)) 
-    (class_body (declaration (constructor_signature (identifier) 
-      (formal_parameter_list 
-        (formal_parameter (super_formal_parameter (super) (identifier))) 
-        (formal_parameter (constructor_param (this) (identifier))) 
-        (optional_formal_parameters (formal_parameter (type_identifier) (identifier))
-        (formal_parameter (type_identifier) (identifier)))))
-        (initializers (initializer_list_entry (field_initializer (identifier) (identifier))) 
-        (initializer_list_entry (field_initializer (identifier) (identifier)))))
-         (declaration (final_builtin) (type_identifier) (initialized_identifier_list 
-         (initialized_identifier (identifier)))) (declaration (final_builtin) (type_identifier) 
-         (initialized_identifier_list (initialized_identifier (identifier)))) 
-         (declaration (final_builtin) (type_identifier) 
-         (initialized_identifier_list (initialized_identifier (identifier)))) 
-         (declaration (getter_signature (type_identifier) (identifier))) 
-         (declaration (getter_signature (type_identifier) (identifier))) 
-         (declaration (const_builtin) (type_identifier) (type_arguments (type_identifier) 
-         (type_identifier)) (static_final_declaration_list (static_final_declaration (identifier) 
-         (set_or_map_literal (type_arguments (type_identifier) (type_identifier)) 
-         (pair (identifier) (identifier)) (pair (identifier) (identifier)))))))))
+(program
+  (documentation_comment)
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (constructor_signature
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (super_formal_parameter
+                (super)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (optional_formal_parameters
+              (formal_parameter
+                (type_identifier)
+                (identifier))
+              (formal_parameter
+                (type_identifier)
+                (identifier)))))
+        (initializers
+          (initializer_list_entry
+            (field_initializer
+              (identifier)
+              (identifier)))
+          (initializer_list_entry
+            (field_initializer
+              (identifier)
+              (identifier)))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (declaration
+        (getter_signature
+          (type_identifier)
+          (identifier)))
+      (declaration
+        (const_builtin)
+        (type_identifier)
+        (type_arguments
+          (type_identifier)
+          (type_identifier))
+        (static_final_declaration_list
+          (static_final_declaration
+            (identifier)
+            (set_or_map_literal
+              (type_arguments
+                (type_identifier)
+                (type_identifier))
+              (pair
+                (identifier)
+                (identifier))
+              (pair
+                (identifier)
+                (identifier)))))))))
 
-==============================================
+================================================================================
 more tests 3
-==============================================
+================================================================================
 
 class _RecompileRequest extends _CompilationRequest {
   _RecompileRequest(
@@ -331,44 +718,107 @@ class _RecompileRequest extends _CompilationRequest {
       compiler._recompile(this);
 }
 
----
+--------------------------------------------------------------------------------
 
-(program 
-  (class_definition (identifier) 
-    (superclass (type_identifier)) 
-      (class_body (declaration 
-        (constructor_signature (identifier) 
-        (formal_parameter_list 
-          (formal_parameter (super_formal_parameter (super) (identifier))) 
-          (formal_parameter (constructor_param (this) (identifier))) 
-          (formal_parameter (constructor_param (this) (identifier)))
-          (formal_parameter (constructor_param (this) (identifier))) 
-          (formal_parameter (constructor_param (this) (identifier))) 
-          (formal_parameter (constructor_param (this) (identifier)))
-          (optional_formal_parameters 
-            (formal_parameter (constructor_param (this) (identifier))))))) 
-        (declaration (type_identifier) 
-          (initialized_identifier_list (initialized_identifier (identifier)))) 
-        (declaration (type_identifier) (type_arguments (type_identifier)) 
-        (initialized_identifier_list (initialized_identifier (identifier)))) 
-        (declaration (type_identifier) (initialized_identifier_list
-         (initialized_identifier (identifier)))) (declaration (type_identifier) 
-         (initialized_identifier_list (initialized_identifier (identifier)))) 
-         (declaration (type_identifier) (initialized_identifier_list 
-         (initialized_identifier (identifier)))) 
-         (declaration (final_builtin) (type_identifier)
-          (initialized_identifier_list (initialized_identifier (identifier)))) 
-          (marker_annotation (identifier)) (method_signature 
-          (function_signature (type_identifier) (type_arguments (type_identifier)) 
-          (identifier) (formal_parameter_list (formal_parameter (type_identifier) 
-          (identifier))))) (function_body (identifier) (selector 
-          (unconditional_assignable_selector (identifier))) 
-          (selector (argument_part (arguments (argument (this)))))))))
+(program
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (constructor_signature
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (super_formal_parameter
+                (super)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (optional_formal_parameters
+              (formal_parameter
+                (constructor_param
+                  (this)
+                  (identifier)))))))
+      (declaration
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (type_identifier)
+        (type_arguments
+          (type_identifier))
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (function_signature
+          (type_identifier)
+          (type_arguments
+            (type_identifier))
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (type_identifier)
+              (identifier)))))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (this))))))))))
 
-
-===============================
+================================================================================
 more tests 4
-===============================
+================================================================================
 
   bool debugAssertIsValid() {
     assert(
@@ -384,54 +834,89 @@ more tests 4
     return true;
   }
 
----
- 
-(program 
-(function_signature (type_identifier) (identifier) (formal_parameter_list)) 
-(function_body (block (assert_statement 
-(assertion 
-  (assertion_arguments (logical_and_expression 
-    (equality_expression (identifier) (equality_operator) (null_literal)) 
-    (logical_and_expression 
-      (equality_expression (identifier) (equality_operator) (null_literal)) 
-      (logical_and_expression (equality_expression (identifier) (equality_operator) (null_literal)) 
-        (logical_and_expression (equality_expression (identifier) (equality_operator) (null_literal)) 
-          (logical_and_expression (identifier) (selector (unconditional_assignable_selector (identifier))) 
-            (logical_and_expression (equality_expression (identifier) (equality_operator) (null_literal)) 
-                (logical_and_expression 
-                    (relational_expression (identifier) (relational_operator) 
-                      (decimal_floating_point_literal)) 
-                    (relational_expression (identifier) (relational_operator) (decimal_floating_point_literal)
-                    )
-                  )
-                  )
-                  )
-                )
-              )
-            )
-          ))
-        )
-      ) (return_statement (true)))))
+--------------------------------------------------------------------------------
 
+(program
+  (function_signature
+    (type_identifier)
+    (identifier)
+    (formal_parameter_list))
+  (function_body
+    (block
+      (assert_statement
+        (assertion
+          (assertion_arguments
+            (logical_and_expression
+              (equality_expression
+                (identifier)
+                (equality_operator)
+                (null_literal))
+              (logical_and_expression
+                (equality_expression
+                  (identifier)
+                  (equality_operator)
+                  (null_literal))
+                (logical_and_expression
+                  (equality_expression
+                    (identifier)
+                    (equality_operator)
+                    (null_literal))
+                  (logical_and_expression
+                    (equality_expression
+                      (identifier)
+                      (equality_operator)
+                      (null_literal))
+                    (logical_and_expression
+                      (member_access
+                        (identifier)
+                        (selector
+                          (unconditional_assignable_selector
+                            (identifier))))
+                      (logical_and_expression
+                        (equality_expression
+                          (identifier)
+                          (equality_operator)
+                          (null_literal))
+                        (logical_and_expression
+                          (relational_expression
+                            (identifier)
+                            (relational_operator)
+                            (decimal_floating_point_literal))
+                          (relational_expression
+                            (identifier)
+                            (relational_operator)
+                            (decimal_floating_point_literal))))))))))))
+      (return_statement
+        (true)))))
 
-===================================
+================================================================================
 more tests 5
-===================================
+================================================================================
 
 
   var TextTheme textTheme = TextTheme(error: '');
 
----
+--------------------------------------------------------------------------------
 
+(program
+  (inferred_type)
+  (type_identifier)
+  (initialized_identifier_list
+    (initialized_identifier
+      (identifier)
+      (member_access
+        (identifier)
+        (selector
+          (argument_part
+            (arguments
+              (named_argument
+                (label
+                  (identifier))
+                (string_literal)))))))))
 
-(program (inferred_type) (type_identifier) 
-  (initialized_identifier_list (initialized_identifier (identifier) (identifier) 
-    (selector (argument_part (arguments (named_argument (label (identifier)) (string_literal))))))))
-
-
-===================================
+================================================================================
 more tests 6
-===================================
+================================================================================
 
   void _layout(ConstraintType constraints) {
     @pragma('vm:notify-debugger-on-exception')
@@ -455,51 +940,136 @@ more tests 6
     owner!.buildScope(this, layoutCallback);
   }
 
----
+--------------------------------------------------------------------------------
 
-    (program (function_signature (void_type) (identifier)
-     (formal_parameter_list (formal_parameter (type_identifier) (identifier)))) 
-     (function_body 
-          (block 
-            (local_function_declaration (annotation (identifier) 
-            (arguments (argument (string_literal)))) 
-            (lambda_expression 
-              (function_signature (void_type) (identifier) (formal_parameter_list)) 
-      (function_body (block (local_variable_declaration 
-      (initialized_variable_definition (type_identifier) (identifier))) 
-      (try_statement 
-          (block 
-            (expression_statement 
-              (assignment_expression (assignable_expression (identifier)) 
-              (parenthesized_expression 
-                (type_cast_expression (identifier) 
-                  (type_cast (as_operator) (type_identifier) (type_arguments (type_identifier))))) 
-              (selector (unconditional_assignable_selector (identifier))) 
-              (selector (argument_part (arguments (argument (this)) (argument (identifier))))))) 
-            (expression_statement 
-              (identifier) (selector 
-              (argument_part (arguments (argument (identifier)) (argument (identifier))))))) 
-        (catch_clause (catch_parameters (identifier) (identifier))) 
-          (block 
-              (expression_statement (assignment_expression (assignable_expression (identifier)) (identifier) 
-                  (selector (unconditional_assignable_selector (identifier))) 
-                (selector (argument_part (arguments (argument (identifier) 
-                (selector (argument_part (arguments (named_argument (label (identifier)) 
-              (function_expression (formal_parameter_list) (function_expression_body 
-                (list_literal (type_arguments (type_identifier)) 
-                    (if_element (parenthesized_expression (identifier)) (identifier) 
-                        (selector (argument_part (arguments (argument (identifier) 
-                        (selector (argument_part (arguments (argument (this))))))))))))))))))))))))))))) 
-              
-              
-              
-              (expression_statement (identifier) (selector) 
-              (selector (unconditional_assignable_selector (identifier))) 
-              (selector (argument_part (arguments (argument (this)) (argument (identifier))))))))) 
+(program
+  (function_signature
+    (void_type)
+    (identifier)
+    (formal_parameter_list
+      (formal_parameter
+        (type_identifier)
+        (identifier))))
+  (function_body
+    (block
+      (local_function_declaration
+        (annotation
+          (identifier)
+          (arguments
+            (argument
+              (string_literal))))
+        (lambda_expression
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list))
+          (function_body
+            (block
+              (local_variable_declaration
+                (initialized_variable_definition
+                  (type_identifier)
+                  (identifier)))
+              (try_statement
+                (block
+                  (expression_statement
+                    (assignment_expression
+                      (assignable_expression
+                        (identifier))
+                      (member_access
+                        (parenthesized_expression
+                          (type_cast_expression
+                            (identifier)
+                            (type_cast
+                              (as_operator)
+                              (type_identifier)
+                              (type_arguments
+                                (type_identifier)))))
+                        (selector
+                          (unconditional_assignable_selector
+                            (identifier)))
+                        (selector
+                          (argument_part
+                            (arguments
+                              (argument
+                                (this))
+                              (argument
+                                (identifier))))))))
+                  (expression_statement
+                    (member_access
+                      (identifier)
+                      (selector
+                        (argument_part
+                          (arguments
+                            (argument
+                              (identifier))
+                            (argument
+                              (identifier))))))))
+                (catch_clause
+                  (catch_parameters
+                    (identifier)
+                    (identifier)))
+                (block
+                  (expression_statement
+                    (assignment_expression
+                      (assignable_expression
+                        (identifier))
+                      (member_access
+                        (identifier)
+                        (selector
+                          (unconditional_assignable_selector
+                            (identifier)))
+                        (selector
+                          (argument_part
+                            (arguments
+                              (argument
+                                (member_access
+                                  (identifier)
+                                  (selector
+                                    (argument_part
+                                      (arguments
+                                        (named_argument
+                                          (label
+                                            (identifier))
+                                          (function_expression
+                                            (formal_parameter_list)
+                                            (function_expression_body
+                                              (list_literal
+                                                (type_arguments
+                                                  (type_identifier))
+                                                (if_element
+                                                  (parenthesized_expression
+                                                    (identifier))
+                                                  (member_access
+                                                    (identifier)
+                                                    (selector
+                                                      (argument_part
+                                                        (arguments
+                                                          (argument
+                                                            (member_access
+                                                              (identifier)
+                                                              (selector
+                                                                (argument_part
+                                                                  (arguments
+                                                                    (argument
+                                                                      (this)))))))))))))))))))))))))))))))))
+      (expression_statement
+        (member_access
+          (identifier)
+          (selector)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (this))
+                (argument
+                  (identifier))))))))))
 
-===================================
+================================================================================
 more tests 7
-===================================
+================================================================================
 
   void _layout(ConstraintType constraints) {
     @pragma('vm:notify-debugger-on-exception')
@@ -508,21 +1078,39 @@ more tests 7
     }
   }
 
----
+--------------------------------------------------------------------------------
 
-    (program (function_signature (void_type) (identifier) 
-      (formal_parameter_list (formal_parameter (type_identifier) (identifier)))) 
-        (function_body (block (local_function_declaration (annotation (identifier) 
-          (arguments (argument (string_literal)))) 
-            (lambda_expression 
-              (function_signature (void_type) (identifier) (formal_parameter_list)) 
-              (function_body 
-                (block (local_variable_declaration 
-                (initialized_variable_definition (type_identifier) (identifier))))))))))
+(program
+  (function_signature
+    (void_type)
+    (identifier)
+    (formal_parameter_list
+      (formal_parameter
+        (type_identifier)
+        (identifier))))
+  (function_body
+    (block
+      (local_function_declaration
+        (annotation
+          (identifier)
+          (arguments
+            (argument
+              (string_literal))))
+        (lambda_expression
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list))
+          (function_body
+            (block
+              (local_variable_declaration
+                (initialized_variable_definition
+                  (type_identifier)
+                  (identifier))))))))))
 
-===================================
+================================================================================
 more tests 8
-===================================
+================================================================================
 
   void _layout(ConstraintType constraints) {
     @pragma('vm:notify-debugger-on-exception')
@@ -532,24 +1120,53 @@ more tests 8
     owner!.buildScope(this, layoutCallback);
   }
 
----
+--------------------------------------------------------------------------------
 
- (program (function_signature (void_type) (identifier) 
-  (formal_parameter_list (formal_parameter (type_identifier) (identifier)))) 
-    (function_body (block (local_function_declaration (annotation (identifier) 
-      (arguments (argument (string_literal)))) 
-      (lambda_expression (function_signature (void_type) (identifier) (formal_parameter_list)) 
-        (function_body 
-          (block 
-            (local_variable_declaration 
-              (initialized_variable_definition (type_identifier) (identifier))))))) 
-              (expression_statement (identifier) (selector) (selector 
-          (unconditional_assignable_selector (identifier))) 
-          (selector (argument_part (arguments (argument (this)) (argument (identifier)))))))))
+(program
+  (function_signature
+    (void_type)
+    (identifier)
+    (formal_parameter_list
+      (formal_parameter
+        (type_identifier)
+        (identifier))))
+  (function_body
+    (block
+      (local_function_declaration
+        (annotation
+          (identifier)
+          (arguments
+            (argument
+              (string_literal))))
+        (lambda_expression
+          (function_signature
+            (void_type)
+            (identifier)
+            (formal_parameter_list))
+          (function_body
+            (block
+              (local_variable_declaration
+                (initialized_variable_definition
+                  (type_identifier)
+                  (identifier)))))))
+      (expression_statement
+        (member_access
+          (identifier)
+          (selector)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (this))
+                (argument
+                  (identifier))))))))))
 
-====================================
+================================================================================
 cascade selector
-====================================
+================================================================================
 
 
         layer
@@ -559,20 +1176,31 @@ cascade selector
         ..unlinkedOffset = offset;
 
 
----
-(program 
-  (expression_statement 
-    (identifier) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier))
-  )
-)
+--------------------------------------------------------------------------------
 
-====================================
+(program
+  (expression_statement
+    (identifier)
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))))
+
+================================================================================
 cascade selector 2
-====================================
+================================================================================
 
 
         layer
@@ -582,21 +1210,31 @@ cascade selector 2
         ..unlinkedOffset = offset;
 
 
----
-(program 
-  (expression_statement 
-    (identifier) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier)) 
-    (cascade_section (cascade_selector (identifier)) (identifier))
-  )
-)
+--------------------------------------------------------------------------------
 
+(program
+  (expression_statement
+    (identifier)
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))
+    (cascade_section
+      (cascade_selector
+        (identifier))
+      (identifier))))
 
-====================================
+================================================================================
 comment selector 1
-====================================
+================================================================================
 
     //    O
     //   / \       O=root
@@ -609,32 +1247,52 @@ comment selector 1
       child: Stack(),
     ));
 
----
+--------------------------------------------------------------------------------
 
-(program 
+(program
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (expression_statement
+    (unary_expression
+      (await_expression
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (member_access
+                    (identifier)
+                    (selector
+                      (argument_part
+                        (arguments
+                          (named_argument
+                            (label
+                              (identifier))
+                            (member_access
+                              (identifier)
+                              (selector
+                                (unconditional_assignable_selector
+                                  (identifier)))))
+                          (named_argument
+                            (label
+                              (identifier))
+                            (member_access
+                              (identifier)
+                              (selector
+                                (argument_part
+                                  (arguments))))))))))))))))))
 
-  (comment) 
-  (comment) 
-  (comment) 
-  (comment) 
-  (comment) 
-  (comment) 
-  
-  (expression_statement 
-      (unary_expression 
-        (await_expression (identifier) 
-            (selector (unconditional_assignable_selector (identifier))) 
-            (selector (argument_part (arguments (argument (identifier) 
-            (selector (argument_part 
-              (arguments 
-                (named_argument (label (identifier)) (identifier) 
-                  (selector (unconditional_assignable_selector (identifier)))) 
-                (named_argument (label (identifier)) (identifier) (selector (argument_part (arguments))))
-              )))))))))))
-
-====================================
+================================================================================
 comment overselected 2
-====================================
+================================================================================
 
 // }
 //
@@ -648,32 +1306,91 @@ class Placeholder {
   final String resourceId;
 }
 
----
+--------------------------------------------------------------------------------
 
-(program (comment) (comment) (class_definition (identifier) 
-    (class_body (declaration (constructor_signature (identifier) (formal_parameter_list 
-    (formal_parameter (constructor_param (this) (identifier))) (formal_parameter (constructor_param (this) (identifier))) 
-    (formal_parameter (type_identifier) (type_arguments (type_identifier) (type_identifier)) (identifier)))) (initializers 
-    (initializer_list_entry (assertion (assertion_arguments (equality_expression (identifier) (equality_operator) (null_literal))))) 
-    (initializer_list_entry (assertion (assertion_arguments (equality_expression (identifier) (equality_operator) (null_literal))))) 
-    (initializer_list_entry (field_initializer (identifier) (identifier) (selector (argument_part (arguments (argument (identifier)) 
-    (argument (identifier)) (argument (identifier)) (argument (string_literal))))))) 
-    (initializer_list_entry (field_initializer (identifier) 
-    (if_null_expression (identifier) (selector 
-    (argument_part 
-      (arguments 
-        (argument (identifier)) 
-        (argument (identifier)) 
-        (argument (identifier)) 
-        (argument (string_literal))))) 
-        (string_literal)))))) 
-    (declaration (final_builtin) (type_identifier) 
-    (initialized_identifier_list (initialized_identifier (identifier))))))) 
+(program
+  (comment)
+  (comment)
+  (class_definition
+    (identifier)
+    (class_body
+      (declaration
+        (constructor_signature
+          (identifier)
+          (formal_parameter_list
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (constructor_param
+                (this)
+                (identifier)))
+            (formal_parameter
+              (type_identifier)
+              (type_arguments
+                (type_identifier)
+                (type_identifier))
+              (identifier))))
+        (initializers
+          (initializer_list_entry
+            (assertion
+              (assertion_arguments
+                (equality_expression
+                  (identifier)
+                  (equality_operator)
+                  (null_literal)))))
+          (initializer_list_entry
+            (assertion
+              (assertion_arguments
+                (equality_expression
+                  (identifier)
+                  (equality_operator)
+                  (null_literal)))))
+          (initializer_list_entry
+            (field_initializer
+              (identifier)
+              (member_access
+                (identifier)
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (identifier))
+                      (argument
+                        (identifier))
+                      (argument
+                        (identifier))
+                      (argument
+                        (string_literal))))))))
+          (initializer_list_entry
+            (field_initializer
+              (identifier)
+              (if_null_expression
+                (member_access
+                  (identifier)
+                  (selector
+                    (argument_part
+                      (arguments
+                        (argument
+                          (identifier))
+                        (argument
+                          (identifier))
+                        (argument
+                          (identifier))
+                        (argument
+                          (string_literal))))))
+                (string_literal))))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier)))))))
 
-
-================================================
+================================================================================
 static late final 1
-================================================
+================================================================================
 
 class TestRoot extends StatefulWidget {
   const TestRoot({ super.key });
@@ -684,32 +1401,66 @@ class TestRoot extends StatefulWidget {
   State<TestRoot> createState() => TestRootState();
 }
 
----
+--------------------------------------------------------------------------------
 
-    (program 
-      (class_definition (identifier) (superclass (type_identifier)) 
-        (class_body 
-          (declaration 
-              (constant_constructor_signature (const_builtin) (qualified (identifier)) 
-              (formal_parameter_list (optional_formal_parameters 
-          (formal_parameter (super_formal_parameter (super) (identifier))))))) 
-          (declaration (final_builtin) (type_identifier) 
-            (initialized_identifier_list (initialized_identifier (identifier)))) 
-            (marker_annotation (identifier)) 
-          (method_signature 
-            (function_signature (type_identifier) 
-            (type_arguments (type_identifier)) (identifier) (formal_parameter_list))) 
-            (function_body (identifier) (selector (argument_part (arguments))))))) 
+(program
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (constant_constructor_signature
+          (const_builtin)
+          (qualified
+            (identifier))
+          (formal_parameter_list
+            (optional_formal_parameters
+              (formal_parameter
+                (super_formal_parameter
+                  (super)
+                  (identifier)))))))
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier))))
+      (marker_annotation
+        (identifier))
+      (method_signature
+        (function_signature
+          (type_identifier)
+          (type_arguments
+            (type_identifier))
+          (identifier)
+          (formal_parameter_list)))
+      (function_body
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments))))))))
 
-================================================
+================================================================================
 static late final 2
-================================================
+================================================================================
 
 class TestRoot extends StatefulWidget {
   static late final TestRootState state;
 }
 
----
-    (program (class_definition (identifier) (superclass (type_identifier)) 
-        (class_body (declaration (final_builtin) (type_identifier) 
-        (initialized_identifier_list (initialized_identifier (identifier)))))))
+--------------------------------------------------------------------------------
+
+(program
+  (class_definition
+    (identifier)
+    (superclass
+      (type_identifier))
+    (class_body
+      (declaration
+        (final_builtin)
+        (type_identifier)
+        (initialized_identifier_list
+          (initialized_identifier
+            (identifier)))))))

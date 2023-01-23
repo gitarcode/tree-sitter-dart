@@ -272,15 +272,17 @@ if (a)
       (parenthesized_expression
         (identifier))
       (expression_statement
-        (identifier)
-        (selector
-          (argument_part
-            (arguments))))
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments)))))
       (expression_statement
-        (identifier)
-        (selector
-          (argument_part
-            (arguments)))))))
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments))))))))
 
 ================================================================================
 ternary expressions
@@ -337,52 +339,26 @@ for (j.init(i); j.check(); j.update()) {
           (increment_operator))))
     body: (block
       (expression_statement
-        (identifier)
-        (selector
-          (unconditional_assignable_selector
-            (identifier)))
-        (selector
-          (unconditional_assignable_selector
-            (identifier)))
-        (selector
-          (argument_part
-            (arguments
-              (argument
-                (additive_expression
-                  (string_literal)
-                  (additive_operator)
-                  (identifier)))))))))
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (additive_expression
+                    (string_literal)
+                    (additive_operator)
+                    (identifier))))))))))
   (for_statement
     (for_loop_parts
-      init: (identifier)
-      init: (selector
-        (unconditional_assignable_selector
-          (identifier)))
-      init: (selector
-        (argument_part
-          (arguments
-            (argument
-              (identifier)))))
-      condition: (identifier)
-      condition: (selector
-        (unconditional_assignable_selector
-          (identifier)))
-      condition: (selector
-        (argument_part
-          (arguments)))
-      update: (identifier)
-      update: (selector
-        (unconditional_assignable_selector
-          (identifier)))
-      update: (selector
-        (argument_part
-          (arguments))))
-    body: (block
-      (expression_statement
+      init: (member_access
         (identifier)
-        (selector
-          (unconditional_assignable_selector
-            (identifier)))
         (selector
           (unconditional_assignable_selector
             (identifier)))
@@ -390,7 +366,38 @@ for (j.init(i); j.check(); j.update()) {
           (argument_part
             (arguments
               (argument
-                (identifier)))))))))
+                (identifier))))))
+      condition: (member_access
+        (identifier)
+        (selector
+          (unconditional_assignable_selector
+            (identifier)))
+        (selector
+          (argument_part
+            (arguments))))
+      update: (member_access
+        (identifier)
+        (selector
+          (unconditional_assignable_selector
+            (identifier)))
+        (selector
+          (argument_part
+            (arguments)))))
+    body: (block
+      (expression_statement
+        (member_access
+          (identifier)
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (unconditional_assignable_selector
+              (identifier)))
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (identifier))))))))))
 
 ================================================================================
 enhanced for statements
@@ -410,12 +417,13 @@ for (A b in c) {
       (identifier))
     (block
       (expression_statement
-        (identifier)
-        (selector
-          (argument_part
-            (arguments
-              (argument
-                (identifier)))))))))
+        (member_access
+          (identifier)
+          (selector
+            (argument_part
+              (arguments
+                (argument
+                  (identifier))))))))))
 
 ================================================================================
 await expressions
@@ -440,22 +448,23 @@ void main() async {
           (identifier)
           (unary_expression
             (await_expression
-              (identifier)
-              (selector
-                (unconditional_assignable_selector
-                  (identifier)))
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (const_object_expression
-                        (const_builtin)
-                        (type_identifier)
-                        (arguments
-                          (named_argument
-                            (label
-                              (identifier))
-                            (decimal_integer_literal)))))))))))))))
+              (member_access
+                (identifier)
+                (selector
+                  (unconditional_assignable_selector
+                    (identifier)))
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (const_object_expression
+                          (const_builtin)
+                          (type_identifier)
+                          (arguments
+                            (named_argument
+                              (label
+                                (identifier))
+                              (decimal_integer_literal))))))))))))))))
 
 ================================================================================
 unary negation expression
@@ -527,11 +536,12 @@ if (data['frame_count'] as int < 5) {
     (parenthesized_expression
       (relational_expression
         (type_cast_expression
-          (identifier)
-          (selector
-            (unconditional_assignable_selector
-              (index_selector
-                (string_literal))))
+          (member_access
+            (identifier)
+            (selector
+              (unconditional_assignable_selector
+                (index_selector
+                  (string_literal)))))
           (type_cast
             (as_operator)
             (type_identifier)))
@@ -555,11 +565,12 @@ if ((data['frame_count'] as int) < 5) {
       (relational_expression
         (parenthesized_expression
           (type_cast_expression
-            (identifier)
-            (selector
-              (unconditional_assignable_selector
-                (index_selector
-                  (string_literal))))
+            (member_access
+              (identifier)
+              (selector
+                (unconditional_assignable_selector
+                  (index_selector
+                    (string_literal)))))
             (type_cast
               (as_operator)
               (type_identifier))))
@@ -613,17 +624,18 @@ my.size!.run();
 
 (program
   (expression_statement
-    (identifier)
-    (selector
-      (unconditional_assignable_selector
-        (identifier)))
-    (selector)
-    (selector
-      (unconditional_assignable_selector
-        (identifier)))
-    (selector
-      (argument_part
-        (arguments)))))
+    (member_access
+      (identifier)
+      (selector
+        (unconditional_assignable_selector
+          (identifier)))
+      (selector)
+      (selector
+        (unconditional_assignable_selector
+          (identifier)))
+      (selector
+        (argument_part
+          (arguments))))))
 
 ================================================================================
 Simple assertion w/o nonnull
