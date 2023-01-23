@@ -86,7 +86,6 @@ module.exports = grammar({
 
     inline: $ => [
         $._ambiguous_name,
-        $._class_member_definition,
         $._if_null_expression,
     ],
 
@@ -1699,7 +1698,7 @@ module.exports = grammar({
             repeat(
                 seq(
                     optional($._metadata),
-                    $._class_member_definition
+                    $.class_member_definition
                 )
             ),
             '}'
@@ -1707,21 +1706,15 @@ module.exports = grammar({
         extension_body: $ => seq(
             '{',
             repeat(
-                choice(
-                    seq(optional($._metadata), $.declaration, $._semicolon),
-                    seq(
-                        optional($._metadata),
-                        seq(
-                            $.method_signature,
-                            $.function_body
-                        ),
-                    )
+                seq(
+                    optional($._metadata),
+                    $.class_member_definition
                 )
             ),
             '}'
         ),
 
-        _class_member_definition: $ => choice(
+        class_member_definition: $ => choice(
             seq($.declaration, $._semicolon),
             seq(
                 $.method_signature,

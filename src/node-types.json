@@ -1736,19 +1736,11 @@
           "named": true
         },
         {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "function_body",
+          "type": "class_member_definition",
           "named": true
         },
         {
           "type": "marker_annotation",
-          "named": true
-        },
-        {
-          "type": "method_signature",
           "named": true
         }
       ]
@@ -1823,6 +1815,29 @@
         },
         {
           "type": "mixin_application_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "class_member_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "function_body",
+          "named": true
+        },
+        {
+          "type": "method_signature",
           "named": true
         }
       ]
@@ -3034,19 +3049,11 @@
           "named": true
         },
         {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "function_body",
+          "type": "class_member_definition",
           "named": true
         },
         {
           "type": "marker_annotation",
-          "named": true
-        },
-        {
-          "type": "method_signature",
           "named": true
         }
       ]

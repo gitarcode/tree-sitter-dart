@@ -6145,7 +6145,7 @@
               },
               {
                 "type": "SYMBOL",
-                "name": "_class_member_definition"
+                "name": "class_member_definition"
               }
             ]
           }
@@ -6166,62 +6166,23 @@
         {
           "type": "REPEAT",
           "content": {
-            "type": "CHOICE",
+            "type": "SEQ",
             "members": [
               {
-                "type": "SEQ",
+                "type": "CHOICE",
                 "members": [
                   {
-                    "type": "CHOICE",
-                    "members": [
-                      {
-                        "type": "SYMBOL",
-                        "name": "_metadata"
-                      },
-                      {
-                        "type": "BLANK"
-                      }
-                    ]
+                    "type": "SYMBOL",
+                    "name": "_metadata"
                   },
                   {
-                    "type": "SYMBOL",
-                    "name": "declaration"
-                  },
-                  {
-                    "type": "SYMBOL",
-                    "name": "_semicolon"
+                    "type": "BLANK"
                   }
                 ]
               },
               {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "CHOICE",
-                    "members": [
-                      {
-                        "type": "SYMBOL",
-                        "name": "_metadata"
-                      },
-                      {
-                        "type": "BLANK"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "SEQ",
-                    "members": [
-                      {
-                        "type": "SYMBOL",
-                        "name": "method_signature"
-                      },
-                      {
-                        "type": "SYMBOL",
-                        "name": "function_body"
-                      }
-                    ]
-                  }
-                ]
+                "type": "SYMBOL",
+                "name": "class_member_definition"
               }
             ]
           }
@@ -6232,7 +6193,7 @@
         }
       ]
     },
-    "_class_member_definition": {
+    "class_member_definition": {
       "type": "CHOICE",
       "members": [
         {
@@ -10414,7 +10375,6 @@
   ],
   "inline": [
     "_ambiguous_name",
-    "_class_member_definition",
     "_if_null_expression"
   ],
   "supertypes": [
