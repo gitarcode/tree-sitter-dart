@@ -655,23 +655,25 @@ printStream(args['json'] as bool ? '' : 'hi');
 
 (program
   (expression_statement
-    (identifier)
-    (selector
-      (argument_part
-        (arguments
-          (argument
-            (conditional_expression
-              (type_cast_expression
-                (identifier)
-                (selector
-                  (unconditional_assignable_selector
-                    (index_selector
-                      (string_literal))))
-                (type_cast
-                  (as_operator)
-                  (type_identifier)))
-              (string_literal)
-              (string_literal))))))))
+    (member_access
+      (identifier)
+      (selector
+        (argument_part
+          (arguments
+            (argument
+              (conditional_expression
+                (type_cast_expression
+                  (member_access
+                    (identifier)
+                    (selector
+                      (unconditional_assignable_selector
+                        (index_selector
+                          (string_literal)))))
+                  (type_cast
+                    (as_operator)
+                    (type_identifier)))
+                (string_literal)
+                (string_literal)))))))))
 
 ================================================================================
 Complex (parenthesized) type cast in function call
@@ -683,24 +685,26 @@ printStream((args['json'] as bool) ? '' : 'hi');
 
 (program
   (expression_statement
-    (identifier)
-    (selector
-      (argument_part
-        (arguments
-          (argument
-            (conditional_expression
-              (parenthesized_expression
-                (type_cast_expression
-                  (identifier)
-                  (selector
-                    (unconditional_assignable_selector
-                      (index_selector
-                        (string_literal))))
-                  (type_cast
-                    (as_operator)
-                    (type_identifier))))
-              (string_literal)
-              (string_literal))))))))
+    (member_access
+      (identifier)
+      (selector
+        (argument_part
+          (arguments
+            (argument
+              (conditional_expression
+                (parenthesized_expression
+                  (type_cast_expression
+                    (member_access
+                      (identifier)
+                      (selector
+                        (unconditional_assignable_selector
+                          (index_selector
+                            (string_literal)))))
+                    (type_cast
+                      (as_operator)
+                      (type_identifier))))
+                (string_literal)
+                (string_literal)))))))))
 
 ================================================================================
 typecast in expression
