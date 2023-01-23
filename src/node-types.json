@@ -100,7 +100,7 @@
         "named": true
       },
       {
-        "type": "local_function_declaration",
+        "type": "lambda_expression",
         "named": true
       },
       {
@@ -5727,6 +5727,20 @@
           }
         ]
       },
+      "metadata": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "annotation",
+            "named": true
+          },
+          {
+            "type": "marker_annotation",
+            "named": true
+          }
+        ]
+      },
       "parameters": {
         "multiple": false,
         "required": true,
@@ -5958,29 +5972,6 @@
         },
         {
           "type": "unconditional_assignable_selector",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "local_function_declaration",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "annotation",
-          "named": true
-        },
-        {
-          "type": "lambda_expression",
-          "named": true
-        },
-        {
-          "type": "marker_annotation",
           "named": true
         }
       ]

@@ -702,6 +702,7 @@ module.exports = grammar({
         // )),
 
         lambda_expression: $ => seq(
+            field('metadata', optional($._metadata)),
             field('parameters', $.function_signature),
             field(
                 'body',
@@ -1189,7 +1190,7 @@ module.exports = grammar({
         // Statements
         _statement: $ => choice(
             $.block,
-            prec.dynamic(1, $.local_function_declaration),
+            prec.dynamic(1, $.lambda_expression),
             prec.dynamic(2, $.local_variable_declaration),
             $.for_statement,
             $.while_statement,
@@ -1209,12 +1210,6 @@ module.exports = grammar({
             $.assert_statement,
             // $.labeled_statement,
         ),
-
-        local_function_declaration: $ => seq(
-            optional($._metadata),
-            $.lambda_expression
-        ),
-
         block: $ => seq(
             '{', repeat($._statement), '}'
         ),

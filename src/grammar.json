@@ -1988,6 +1988,22 @@
       "members": [
         {
           "type": "FIELD",
+          "name": "metadata",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "_metadata"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          }
+        },
+        {
+          "type": "FIELD",
           "name": "parameters",
           "content": {
             "type": "SYMBOL",
@@ -3817,7 +3833,7 @@
           "value": 1,
           "content": {
             "type": "SYMBOL",
-            "name": "local_function_declaration"
+            "name": "lambda_expression"
           }
         },
         {
@@ -3879,27 +3895,6 @@
         {
           "type": "SYMBOL",
           "name": "assert_statement"
-        }
-      ]
-    },
-    "local_function_declaration": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_metadata"
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
-        },
-        {
-          "type": "SYMBOL",
-          "name": "lambda_expression"
         }
       ]
     },
