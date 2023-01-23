@@ -27,26 +27,25 @@ class MyApp extends StatelessWidget {
         (configurable_uri
           (uri
             (string_literal))))))
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (void_type)
-        (identifier)
-        (formal_parameter_list))
-      (function_body
-        (block
-          (expression_statement
-            (member_access
-              (identifier)
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (member_access
-                        (identifier)
-                        (selector
-                          (argument_part
-                            (arguments))))))))))))))
+  (lambda_expression
+    (function_signature
+      (void_type)
+      (identifier)
+      (formal_parameter_list))
+    (function_body
+      (block
+        (expression_statement
+          (member_access
+            (identifier)
+            (selector
+              (argument_part
+                (arguments
+                  (argument
+                    (member_access
+                      (identifier)
+                      (selector
+                        (argument_part
+                          (arguments)))))))))))))
   (class_definition
     (identifier)
     (superclass

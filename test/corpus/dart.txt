@@ -137,16 +137,15 @@ String hello(r) => 'hello';
 --------------------------------------------------------------------------------
 
 (program
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (type_identifier)
-        (identifier)
-        (formal_parameter_list
-          (formal_parameter
-            (identifier))))
-      (function_body
-        (string_literal)))))
+  (lambda_expression
+    (function_signature
+      (type_identifier)
+      (identifier)
+      (formal_parameter_list
+        (formal_parameter
+          (identifier))))
+    (function_body
+      (string_literal))))
 
 ================================================================================
 dart set literals
@@ -334,36 +333,35 @@ void main() {
 --------------------------------------------------------------------------------
 
 (program
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (void_type)
-        (identifier)
-        (formal_parameter_list))
-      (function_body
-        (block
-          (expression_statement
-            (unary_expression
-              (await_expression
-                (member_access
-                  (identifier)
-                  (selector
-                    (unconditional_assignable_selector
-                      (identifier)))
-                  (selector
-                    (argument_part
-                      (arguments
-                        (argument
-                          (member_access
-                            (decimal_integer_literal)
-                            (selector
-                              (unconditional_assignable_selector
-                                (identifier)))))
-                        (argument
-                          (function_expression
-                            (formal_parameter_list)
-                            (function_expression_body
-                              (block))))))))))))))))
+  (lambda_expression
+    (function_signature
+      (void_type)
+      (identifier)
+      (formal_parameter_list))
+    (function_body
+      (block
+        (expression_statement
+          (unary_expression
+            (await_expression
+              (member_access
+                (identifier)
+                (selector
+                  (unconditional_assignable_selector
+                    (identifier)))
+                (selector
+                  (argument_part
+                    (arguments
+                      (argument
+                        (member_access
+                          (decimal_integer_literal)
+                          (selector
+                            (unconditional_assignable_selector
+                              (identifier)))))
+                      (argument
+                        (function_expression
+                          (formal_parameter_list)
+                          (function_expression_body
+                            (block)))))))))))))))
 
 ================================================================================
 part directive
@@ -538,23 +536,22 @@ void main() {
 --------------------------------------------------------------------------------
 
 (program
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (void_type)
-        (identifier)
-        (formal_parameter_list))
-      (function_body
-        (block
-          (expression_statement
-            (member_access
-              (identifier)
-              (selector
-                (argument_part
-                  (arguments
-                    (argument
-                      (member_access
-                        (identifier)
-                        (selector
-                          (unconditional_assignable_selector
-                            (identifier)))))))))))))))
+  (lambda_expression
+    (function_signature
+      (void_type)
+      (identifier)
+      (formal_parameter_list))
+    (function_body
+      (block
+        (expression_statement
+          (member_access
+            (identifier)
+            (selector
+              (argument_part
+                (arguments
+                  (argument
+                    (member_access
+                      (identifier)
+                      (selector
+                        (unconditional_assignable_selector
+                          (identifier))))))))))))))

@@ -614,23 +614,22 @@ void callback(Future<void> Function(String?) handler) {
 --------------------------------------------------------------------------------
 
 (program
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (void_type)
-        (identifier)
-        (formal_parameter_list
-          (formal_parameter
-            (function_type
-              (type_identifier)
-              (type_arguments
-                (void_type))
-              (parameter_type_list
-                (normal_parameter_type
-                  (type_identifier))))
-            (identifier))))
-      (function_body
-        (block)))))
+  (lambda_expression
+    (function_signature
+      (void_type)
+      (identifier)
+      (formal_parameter_list
+        (formal_parameter
+          (function_type
+            (type_identifier)
+            (type_arguments
+              (void_type))
+            (parameter_type_list
+              (normal_parameter_type
+                (type_identifier))))
+          (identifier))))
+    (function_body
+      (block))))
 
 ================================================================================
 Type with Library Prefix
@@ -741,21 +740,20 @@ void _invoke(void callback()?, Zone? zone) {
 --------------------------------------------------------------------------------
 
 (program
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (void_type)
-        (identifier)
-        (formal_parameter_list
-          (formal_parameter
-            (void_type)
-            (identifier)
-            (formal_parameter_list))
-          (formal_parameter
-            (type_identifier)
-            (identifier))))
-      (function_body
-        (block)))))
+  (lambda_expression
+    (function_signature
+      (void_type)
+      (identifier)
+      (formal_parameter_list
+        (formal_parameter
+          (void_type)
+          (identifier)
+          (formal_parameter_list))
+        (formal_parameter
+          (type_identifier)
+          (identifier))))
+    (function_body
+      (block))))
 
 ================================================================================
 Get and set methods (not keyword)
@@ -772,19 +770,18 @@ class MyClass {
 
 (program
   (comment)
-  (local_function_declaration
-    (lambda_expression
-      (function_signature
-        (type_identifier)
-        (identifier)
-        (formal_parameter_list
-          (formal_parameter
-            (type_identifier)
-            (identifier))))
-      (function_body
-        (string_literal
-          (template_substitution
-            (identifier_dollar_escaped))))))
+  (lambda_expression
+    (function_signature
+      (type_identifier)
+      (identifier)
+      (formal_parameter_list
+        (formal_parameter
+          (type_identifier)
+          (identifier))))
+    (function_body
+      (string_literal
+        (template_substitution
+          (identifier_dollar_escaped)))))
   (class_definition
     (identifier)
     (class_body
