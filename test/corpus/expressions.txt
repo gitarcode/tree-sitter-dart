@@ -844,8 +844,9 @@ parameters?["charset"];
 
 (program
   (expression_statement
-    (identifier)
-    (selector
-      (unconditional_assignable_selector
-        (index_selector
-          (string_literal))))))
+    (member_access
+      (identifier)
+      (selector
+        (unconditional_assignable_selector
+          (index_selector
+            (string_literal)))))))
